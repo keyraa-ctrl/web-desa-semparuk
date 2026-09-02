@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Resmi Desa Semparuk</title>
+    <title>Website Resmi Desa Semparuk - Kabupaten Sambas</title>
     <style>
         :root {
             --primary: #0284c7;
@@ -48,7 +48,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: bold;
             color: var(--primary-dark);
             text-decoration: none;
@@ -60,7 +60,7 @@
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         .nav-links a {
@@ -88,15 +88,15 @@
         }
 
         .hero-content h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
             font-weight: 700;
         }
 
         .hero-content p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
-            max-width: 700px;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -146,9 +146,9 @@
         /* Profil Desa */
         .profil-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 0.8fr;
             gap: 3rem;
-            align-items: center;
+            align-items: start;
         }
 
         .profil-text p {
@@ -164,10 +164,15 @@
             border-top: 5px solid var(--primary);
         }
 
+        .profil-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
         /* Potensi Desa */
         .potensi-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
@@ -190,6 +195,39 @@
         .card-body h3 {
             color: var(--primary-dark);
             margin-bottom: 0.75rem;
+        }
+
+        /* Galeri Desa */
+        .galeri-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .galeri-item {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .galeri-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .galeri-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .galeri-caption {
+            padding: 1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            text-align: center;
         }
 
         /* Statistik / Info Singkat */
@@ -232,13 +270,14 @@
                 font-size: 2.2rem;
             }
             .nav-links {
-                display: none; /* Sederhana untuk mobile */
+                display: none; 
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- Header & Navbar -->
     <header>
         <nav class="navbar">
             <a href="#" class="logo">🌊 Desa Semparuk</a>
@@ -246,46 +285,96 @@
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#profil">Profil</a></li>
                 <li><a href="#potensi">Potensi</a></li>
+                <li><a href="#galeri">Galeri</a></li>
                 <li><a href="#statistik">Statistik</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="beranda" class="hero">
         <div class="hero-content">
             <h1>Selamat Datang di Website Resmi Desa Semparuk</h1>
-            <p>Pusat informasi publik, transparansi pemerintahan desa, serta potensi unggulan masyarakat Desa Semparuk.</p>
+            <p>Pusat informasi publik, transparansi pemerintahan desa, serta gerbang digital untuk mengenal lebih dekat potensi dan kebudayaan masyarakat Desa Semparuk.</p>
             <a href="#profil" class="btn">Jelajahi Desa</a>
         </div>
     </section>
 
+    <!-- Profil Desa -->
     <section id="profil" class="container">
         <h2>Profil Desa Semparuk</h2>
         <div class="profil-grid">
             <div class="profil-text">
-                <p>Desa Semparuk adalah salah satu wilayah yang terletak di Kecamatan Semparuk, Kabupaten Sambas, Provinsi Kalimantan Barat. Wilayah ini dikenal dengan keharmonisan masyarakatnya serta kekayaan sumber daya alam yang potensial di sektor pertanian, perkebunan, dan perdagangan lokal.</p>
-                <p>Pemerintahan desa berkomitmen untuk memberikan pelayanan publik yang transparan, cepat, dan berbasis digital demi mewujudkan kesejahteraan seluruh warga masyarakat.</p>
+                <p><strong>Desa Semparuk</strong> merupakan salah satu desa yang berada di wilayah <strong>Kecamatan Semparuk, Kabupaten Sambas, Provinsi Kalimantan Barat</strong>. Wilayah ini memiliki karakteristik pedesaan yang dinamis, memadukan kehidupan agraris dengan aktivitas perdagangan lokal yang terus berkembang pesat.</p>
+                <p>Secara administratif, wilayah kecamatan dan desa di kawasan ini memiliki sejarah perkembangan yang erat dengan pemekaran wilayah Kabupaten Sambas. Masyarakat Desa Semparuk dikenal sangat menjunjung tinggi nilai-nilai kebersamaan, adat istiadat, serta kerukunan antarwarga.</p>
+                <p>Pemerintahan Desa Semparuk berkomitmen untuk mewujudkan tata kelola pemerintahan yang transparan, akuntabel, serta memberikan pelayanan prima kepada seluruh warga demi tercapainya kesejahteraan bersama.</p>
             </div>
             <div class="profil-card">
-                <h3>Visi & Misi</h3>
-                <p><strong>Visi:</strong> Terwujudnya Desa Semparuk yang Mandiri, Maju, Sejahtera, dan Berbudaya Berlandaskan Gotong Royong.</p>
+                <h3>Visi & Misi Desa</h3>
+                <p><strong>Visi:</strong><br><em>"Terwujudnya Desa Semparuk yang Mandiri, Maju, Sejahtera, dan Berbudaya Berlandaskan Semangat Gotong Royong."</em></p>
                 <br>
                 <p><strong>Misi:</strong></p>
                 <ul style="padding-left: 20px; margin-top: 5px;">
-                    <li>Meningkatkan kualitas pelayanan publik desa.</li>
-                    <li>Mengembangkan potensi ekonomi lokal melalui UMKM dan pertanian.</li>
-                    <li>Menjaga keamanan dan ketertiban desa yang harmonis.</li>
+                    <li>Meningkatkan kualitas pelayanan publik yang cepat, transparan, dan ramah.</li>
+                    <li>Mengoptimalkan pengelolaan potensi ekonomi desa melalui sektor pertanian, perkebunan, dan UMKM.</li>
+                    <li>Membangun infrastruktur desa yang merata dan berkelanjutan.</li>
+                    <li>Melestarikan kehidupan sosial budaya serta kerukunan antarwarga.</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <!-- Potensi Desa -->
+    <section id="potensi" class="container">
+        <h2>Potensi Unggulan Desa Semparuk</h2>
+        <div class="potensi-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Pertanian & Perkebunan</h3>
+                    <p>Sebagian besar mata pencaharian warga bertumpu pada sektor pertanian dan perkebunan produktif yang menjadi roda penggerak utama perekonomian lokal.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Perdagangan & UMKM</h3>
+                    <p>Pertumbuhan sektor perdagangan skala kecil dan menengah (UMKM) terus didukung penuh oleh pemerintah desa guna meningkatkan pendapatan keluarga warga.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Gotong Royong & Sosial</h3>
+                    <p>Kekuatan tradisi gotong royong dan keaktifan lembaga kemasyarakatan desa menjadi fondasi utama dalam menjaga keamanan serta keharmonisan lingkungan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Desa -->
+    <section id="galeri" class="container">
+        <h2>Galeri Desa Semparuk</h2>
+        <div class="galeri-grid">
+            <div class="galeri-item">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Pertanian Desa Semparuk">
+                <div class="galeri-caption">Aktivitas Sektor Pertanian & Perkebunan</div>
+            </div>
+            <div class="galeri-item">
+                <img src="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&w=600&q=80" alt="Musyawarah Desa">
+                <div class="galeri-caption">Rapat & Musyawarah Bersama Warga</div>
+            </div>
+            <div class="galeri-item">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80" alt="Suasana Alam Desa">
+                <div class="galeri-caption">Keindahan & Suasana Asri Wilayah Desa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistik Singkat -->
     <section id="statistik" class="stats-section">
         <div class="stats-grid">
             <div class="stat-item">
                 <h3>4.500+</h3>
-                <p>Penduduk Jiwa</p>
+                <p>Jiwa Penduduk</p>
             </div>
             <div class="stat-item">
                 <h3>12</h3>
@@ -297,46 +386,25 @@
             </div>
             <div class="stat-item">
                 <h3>100%</h3>
-                <p>Komitmen Pelayanan</p>
+                <p>Komitmen Pelayanan Publik</p>
             </div>
         </div>
     </section>
 
-    <section id="potensi" class="container">
-        <h2>Potensi Desa Semparuk</h2>
-        <div class="potensi-grid">
-            <div class="card">
-                <div class="card-body">
-                    <h3>Pertanian & Perkebunan</h3>
-                    <p>Sektor pertanian dan perkebunan menjadi salah satu penggerak utama ekonomi warga dengan komoditas unggulan lokal yang bernilai tinggi.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>UMKM & Kerajinan</h3>
-                    <p>Berbagai produk olahan rumahan dan kerajinan tangan khas warga lokal yang terus diberdayakan untuk pasar regional.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Gotong Royong & Budaya</h3>
-                    <p>Nilai kebersamaan dan tradisi gotong royong yang kuat antarwarga menjadi fondasi utama kerukunan di Desa Semparuk.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Kontak -->
     <section id="kontak" class="container" style="background-color: var(--white); border-radius: 12px; margin-bottom: 5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-        <h2>Hubungi Kami</h2>
-        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <h2>Hubungi Pemerintah Desa</h2>
+        <div style="text-align: center; max-width: 650px; margin: 0 auto; line-height: 1.8;">
             <p><strong>Kantor Kepala Desa Semparuk</strong></p>
-            <p>Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat</p>
-            <p>Email: info@desasemparuk.id | Telepon: (0562) 123456</p>
+            <p>Kecamatan Semparuk, Kabupaten Sambas, Provinsi Kalimantan Barat</p>
+            <p>Email: layanan@desasemparuk.id | Telepon: (0562) 123456</p>
+            <p style="font-size: 0.9rem; color: #64748b; margin-top: 10px;">Jam Operasional: Senin - Jumat (08.00 - 15.00 WIB)</p>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Pemerintah Desa Semparuk. Hak Cipta Dilindungi.</p>
+        <p>&copy; 2026 Pemerintah Desa Semparuk, Kabupaten Sambas. Hak Cipta Dilindungi.</p>
     </footer>
 
 </body>
